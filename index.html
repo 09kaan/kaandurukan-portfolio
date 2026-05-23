@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaan Durukan</title>
+    <meta name="description" content="Kaan Durukan - TED Universitesi Bilgisayar Muhendisligi mezunu. Bilgisayar gorusu, gomulu sistemler ve yazilim gelistirme.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">Kaan Durukan</a>
+            <div class="nav-links">
+                <a href="#about" data-i18n="nav.about">Hakkimda</a>
+                <a href="#projects" data-i18n="nav.projects">Projeler</a>
+                <a href="#experience" data-i18n="nav.experience">Deneyim</a>
+                <a href="#contact" data-i18n="nav.contact">Iletisim</a>
+                <a href="KaanDurukanCV.pdf" target="_blank" class="nav-cv">CV</a>
+                <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" data-i18n="nav.about">Hakkimda</a>
+        <a href="#projects" data-i18n="nav.projects">Projeler</a>
+        <a href="#experience" data-i18n="nav.experience">Deneyim</a>
+        <a href="#contact" data-i18n="nav.contact">Iletisim</a>
+        <a href="KaanDurukanCV.pdf" target="_blank">CV</a>
+        <button class="lang-toggle" id="lang-toggle-mobile" aria-label="Switch language">EN</button>
+    </div>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-content reveal">
+                    <h1 class="hero-name">Kaan<br>Durukan</h1>
+                    <p class="hero-desc" data-i18n="hero.desc">TED Universitesi Bilgisayar Muhendisligi mezunu. Bilgisayar gorusu, gomulu sistemler ve full-stack yazilim gelistirme alanlarinda calisiyorum.</p>
+                    <div class="hero-links">
+                        <a href="https://github.com/09kaan" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                            GitHub
+                        </a>
+                        <span class="hero-divider"></span>
+                        <a href="https://linkedin.com/in/kaan-durukan" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <span class="hero-divider"></span>
+                        <a href="mailto:kaandurukan09@hotmail.com">
+                            kaandurukan09@hotmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid reveal">
+                    <div class="about-photo">
+                        <img src="profile.png" alt="Kaan Durukan">
+                    </div>
+                    <div class="about-body">
+                        <p class="section-label" data-i18n="about.label">Hakkimda</p>
+                        <p data-i18n="about.p1"><strong>Bilgisayar Muhendisligi</strong> mezunuyum. Jetson Nano uzerinde YOLO modelleri egitmekten, ESP32 ile IoT sistemleri kurmaya, Flutter ile mobil uygulamalar gelistirmeye kadar genis bir yelpazede deneyimim var. Sadece kagit uzerinde degil, gercek dunyada calisan seyler uretmeyi seviyorum.</p>
+                        <p data-i18n="about.p2">Projelerimin cogu <strong>donanim ve yazilimin</strong> kesistigi noktada. Otonom dronelar, akilli termostatlar, robotik sistemler ve full-stack web uygulamalari uzerinde calistim.</p>
+
+                        <div class="about-details">
+                            <div class="about-detail-group">
+                                <h4 data-i18n="about.location">Konum</h4>
+                                <p>Ankara / Izmir, Turkey</p>
+                            </div>
+                            <div class="about-detail-group">
+                                <h4 data-i18n="about.languages">Diller</h4>
+                                <p data-i18n="about.lang_tr">Turkce (Ana dil)</p>
+                                <p data-i18n="about.lang_en">Ingilizce (C1)</p>
+                            </div>
+                            <div class="about-detail-group">
+                                <h4 data-i18n="about.education">Egitim</h4>
+                                <p data-i18n="about.degree">Bilgisayar Muhendisligi Lisans</p>
+                                <p>TED University, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <p class="section-label reveal" data-i18n="skills.label">Teknik Yetenekler</p>
+                <div class="skills-grid reveal">
+                    <div class="skill-item">
+                        <h3 data-i18n="skills.programming">Programlama</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>Dart</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3 data-i18n="skills.frontend">Frontend & Mobil</h3>
+                        <div class="skill-tags">
+                            <span>React</span>
+                            <span>React Native</span>
+                            <span>Flutter</span>
+                            <span>Expo</span>
+                            <span>HTML / CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3 data-i18n="skills.cv">Bilgisayar Gorusu</h3>
+                        <div class="skill-tags">
+                            <span>YOLO</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Embedded / IoT</h3>
+                        <div class="skill-tags">
+                            <span>ESP32</span>
+                            <span>Arduino</span>
+                            <span>Jetson Nano</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3 data-i18n="skills.backend">Backend & Veritabani</h3>
+                        <div class="skill-tags">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Firebase</span>
+                            <span>MongoDB</span>
+                            <span>SQL</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3 data-i18n="skills.tools">Araclar</h3>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <p class="section-label reveal" data-i18n="projects.label">Secilmis Calismalar</p>
+                <h2 class="section-title reveal" data-i18n="projects.title">Projeler</h2>
+
+                <div class="projects-list">
+
+                    <!-- AGMDM -->
+                    <div class="project-row reveal">
+                        <div class="project-media-col carousel" id="agmdm-carousel">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <video autoplay loop muted playsinline>
+                                        <source src="agmdm1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="carousel-slide">
+                                    <video loop muted playsinline>
+                                        <source src="agmdm2.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="agmdm3.jpeg" alt="AGMDM proje gosterimi">
+                                </div>
+                            </div>
+                            <div class="carousel-controls">
+                                <button class="carousel-btn carousel-prev" aria-label="Onceki">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                                </button>
+                                <button class="carousel-btn carousel-next" aria-label="Sonraki">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                                </button>
+                            </div>
+                            <div class="carousel-indicators"></div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-label" data-i18n="agmdm.label">Gercek Zamanli Nesne Tespiti</p>
+                            <h3 class="project-name">AGMDM</h3>
+                            <p class="project-desc" data-i18n="agmdm.desc">Jetson Nano uzerinde ozel egitilmis YOLO modeli ile gercek zamanli nesne tespiti yapan moduler bir drone sistemi. Flutter ile gelistirilen yer istasyonu arayuzu canli tespitleri, telemetriyi ve sistem bilgilerini aktarir. "Genc Beyinler" fuarinda sunulmustur.</p>
+                            <div class="project-tech">
+                                <span>YOLO</span>
+                                <span>Jetson Nano</span>
+                                <span>Python</span>
+                                <span>Flutter</span>
+                                <span>OpenCV</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sesame Robot -->
+                    <div class="project-row reverse reveal">
+                        <div class="project-media-col">
+                            <video autoplay loop muted playsinline>
+                                <source src="Sesame Robot.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-label" data-i18n="sesame.label">Interaktif Robotik Sistem</p>
+                            <h3 class="project-name">Sesame Robot</h3>
+                            <p class="project-desc" data-i18n="sesame.desc">Sifirdan tasarlanmis interaktif bir robot. Mekanik tasarim, mikrodenetleyici programlama ve sensor entegrasyonunu birlestirerek otomatik fiziksel gorevleri yerine getirir. Gercek zamanli motor kontrolu ve cevresel tepki verme ozelligi tasir.</p>
+                            <div class="project-tech">
+                                <span>Robotics</span>
+                                <span>Embedded Systems</span>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smart IoT Thermostat -->
+                    <div class="project-row reveal">
+                        <div class="project-media-col">
+                            <img src="thermostat.jpeg" alt="Akilli IoT Termostat OLED ekranli">
+                        </div>
+                        <div class="project-info">
+                            <p class="project-label" data-i18n="thermo.label">IoT Sicaklik Kontrolu</p>
+                            <h3 class="project-name" data-i18n="thermo.name">Akilli Termostat</h3>
+                            <p class="project-desc" data-i18n="thermo.desc">3D baski kasali ve OLED ekranli ESP32 tabanli termostat. Sicaklik ve nemi gercek zamanli olarak okur, verileri Firebase'e senkronize eder ve Flutter mobil uygulama uzerinden uzaktan kontrol saglar.</p>
+                            <div class="project-tech">
+                                <span>ESP32</span>
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>IoT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SimpleTravel -->
+                    <div class="project-row reverse reveal">
+                        <div class="project-info">
+                            <p class="project-label" data-i18n="travel.label">Yapay Zeka Destekli Mobil Uygulama</p>
+                            <h3 class="project-name">SimpleTravel</h3>
+                            <p class="project-desc" data-i18n="travel.desc">Yapay zeka kullanarak kisisellestirilmis seyahat planlari olusturan mobil uygulama. Kullanicilar adim adim bir sihirbaz ile destinasyon, tarih, butce ve kisi sayisini belirledikten sonra otel, ucus ve tur onerileriyle eksiksiz bir gezi plani alir. React Native ile gelistirilmis, Node.js ve OpenAI entegreli backend'e sahiptir. Turkce ve Ingilizce dil destegi sunar.</p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Expo</span>
+                                <span>TypeScript</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>OpenAI</span>
+                            </div>
+                        </div>
+                        <div class="project-media--placeholder">
+                            <span data-i18n="travel.placeholder">Gorsel yakinda eklenecek</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <p class="section-label reveal" data-i18n="exp.label">Gecmis</p>
+                <h2 class="section-title reveal" data-i18n="exp.title">Deneyim & Egitim</h2>
+
+                <div class="exp-grid reveal">
+                    <div class="exp-column">
+                        <h3 data-i18n="exp.experience">Deneyim</h3>
+
+                        <div class="exp-item">
+                            <p class="exp-date">2024</p>
+                            <h4 class="exp-title" data-i18n="exp.it_title">BT Stajyeri</h4>
+                            <p class="exp-org" data-i18n="exp.it_org">Ozgorkey Holding, Izmir</p>
+                            <p class="exp-desc" data-i18n="exp.it_desc">Kurumsal BT altyapi destegi. Sistem bakimi, ag donanimi sorun giderme ve dahili arac yonetimi.</p>
+                        </div>
+
+                        <div class="exp-item">
+                            <p class="exp-date">2023</p>
+                            <h4 class="exp-title" data-i18n="exp.sw_title">Yazilim Gelistirme Stajyeri</h4>
+                            <p class="exp-org" data-i18n="exp.sw_org">Dijinet, Ankara</p>
+                            <p class="exp-desc" data-i18n="exp.sw_desc">Yazilim gelistirme ve hata ayiklama. Backend servisleri, veritabanlari ve dahili gelistirme surecleri uzerinde calistim.</p>
+                        </div>
+                    </div>
+
+                    <div class="exp-column">
+                        <h3 data-i18n="exp.education">Egitim</h3>
+
+                        <div class="exp-item">
+                            <p class="exp-date">2022 - 2026</p>
+                            <h4 class="exp-title" data-i18n="exp.degree">Bilgisayar Muhendisligi Lisans</h4>
+                            <p class="exp-org">TED University, Ankara</p>
+                            <div class="exp-tags">
+                                <span>EN (C1)</span>
+                                <span data-i18n="exp.tr_native">TR (Ana dil)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-inner reveal">
+                    <p class="section-label" data-i18n="contact.label">Iletisim</p>
+                    <h2 class="contact-title" data-i18n="contact.title">Iletisime gecin</h2>
+                    <p class="contact-text" data-i18n="contact.text">Firsatlara ve is birliklerine acigim. Benimle iletisime gecmekten cekinmeyin.</p>
+
+                    <div class="contact-list">
+                        <a href="mailto:kaandurukan09@hotmail.com" class="contact-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            kaandurukan09@hotmail.com
+                        </a>
+                        <a href="tel:+905432859742" class="contact-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            +90 543 285 97 42
+                        </a>
+                        <a href="https://linkedin.com/in/kaan-durukan" target="_blank" class="contact-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/09kaan" target="_blank" class="contact-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-logo">Kaan Durukan</span>
+                <p>&copy; 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
